@@ -14,22 +14,10 @@ import { Rocks1 } from "../components/Models/WorldObjects/Rocks/Rocks";
 import Water from "../components/Models/WorldObjects/Terrain/Water";
 import { Suspense } from "react";
 import Navbar from "../components/Overlay/Navbar";
-import { Perf } from 'r3f-perf'
+import { Perf } from "r3f-perf";
 import { Physics, RigidBody, Debug, CuboidCollider } from "@react-three/rapier";
 
-
-
-
-
-
-
-
-
-
-
 const Home: NextPage = () => {
-
-
   return (
     <div>
       <Head>
@@ -39,11 +27,8 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
 
-
-
       <Suspense fallback={null}>
         <div className={styles.container}>
-
           <Canvas
             shadows
             legacy={false}
@@ -60,33 +45,31 @@ const Home: NextPage = () => {
 
               zoom: 1.5,
             }}
-
           >
-
-            <Perf position='bottom-left' />
-            <fog attach="fog" args={[' #08b6f9', 5, 80]} />
+            <Perf position="bottom-left" />
+            <fog attach="fog" args={[" #08b6f9", 5, 80]} />
             <Lights />
 
             {/* Scenery */}
             <Physics>
-
               <Debug />
 
-              <Physics>
+              <RigidBody>
                 <Apple position={[-6, 4.2, 2]} />
-              </Physics>
-              <Physics>
+              </RigidBody>
+              <RigidBody>
                 <Pine position={[8, -0.2, 3]} />
-              </Physics>
-              <Physics>
+              </RigidBody>
+              <RigidBody>
                 <Rocks1 position={[-3, -1.2, 3]} scale={[0.5, 0.5, 0.5]} />
-              </Physics>
-              <Rocks1
-                position={[-2, -0.2, 2]}
-                rotation={[0, 47, 0]}
-                scale={[0.5, 0.5, 0.5]}
-              />
-
+              </RigidBody>
+              <RigidBody>
+                <Rocks1
+                  position={[-2, -0.2, 2]}
+                  rotation={[0, 47, 0]}
+                  scale={[0.5, 0.5, 0.5]}
+                />
+              </RigidBody>
               <Rocks1
                 position={[3, -0.2, 4]}
                 rotation={[0, 310, 0]}
@@ -105,21 +88,17 @@ const Home: NextPage = () => {
 
               <Rocks1 position={[-5, -0.2, -30]} rotation={[0, 47, 0]} />
 
-
               <Rocks1
                 position={[-6, -0.2, -30]}
                 rotation={[0, 310, 0]}
                 scale={[1, 0.8, 1]}
               />
 
-
               <Rocks1
                 position={[-11, -0.2, -30]}
                 rotation={[0, 80, 0]}
                 scale={[1, 0.6, 1]}
               />
-
-
 
               {/* Terrain */}
 
@@ -130,14 +109,10 @@ const Home: NextPage = () => {
 
               {/* Player */}
               <Player1 />
-
-
             </Physics>
           </Canvas>
-
         </div>
       </Suspense>
-
     </div>
   );
 };
