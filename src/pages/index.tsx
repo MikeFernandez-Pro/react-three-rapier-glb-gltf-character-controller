@@ -72,13 +72,15 @@ const Home: NextPage = () => {
 
               <Debug />
 
-
-              <Apple position={[-6, 4.2, 2]} />
-
-              <Pine position={[8, -0.2, 3]} />
-
-              <Rocks1 position={[-3, -1.2, 3]} scale={[0.5, 0.5, 0.5]} />
-
+              <Physics>
+                <Apple position={[-6, 4.2, 2]} />
+              </Physics>
+              <Physics>
+                <Pine position={[8, -0.2, 3]} />
+              </Physics>
+              <Physics>
+                <Rocks1 position={[-3, -1.2, 3]} scale={[0.5, 0.5, 0.5]} />
+              </Physics>
               <Rocks1
                 position={[-2, -0.2, 2]}
                 rotation={[0, 47, 0]}
