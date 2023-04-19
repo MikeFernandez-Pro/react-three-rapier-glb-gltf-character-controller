@@ -1,0 +1,36 @@
+{
+  "name": "r3f-rapier-character-controller",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.23.3",
+    "@react-three/fiber": "^8.6.0",
+    "@react-three/rapier": "^0.14.0",
+    "leva": "^0.9.34",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.6",
+    "three": "^0.143.0"
+ 
+  },
+  "devDependencies": {
+    "@types/node": "18.7.9",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "@types/three": "^0.143.1",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "eslint-config-prettier": "^8.5.0",
+    "r3f-perf": "^7.1.2",
+    "three-noise": "^1.1.2",
+    "typescript": "4.7.4"
+  }
+}
