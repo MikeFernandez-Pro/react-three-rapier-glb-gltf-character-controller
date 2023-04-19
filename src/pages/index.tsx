@@ -6,11 +6,11 @@ import Ground from "../components/Models/WorldObjects/Terrain/Ground";
 import Lights from "../components/Lights";
 import Player1 from "../components/Players/Player1";
 import styles from "../styles/Home.module.css";
-import { Palms } from "../components/Models/Flora&Fauna/Trees/Palmsloader";
+
 import { Apple } from "../components/Models/Flora&Fauna/Trees/SmallAppleloader";
 import { Pine } from "../components/Models/Flora&Fauna/Trees/Pineloader";
 import { Rocks1 } from "../components/Models/WorldObjects/Rocks/Rocks";
-import { Rocks2 } from "../components/Models/WorldObjects/Rocks/Rocks2";
+
 import Water from "../components/Models/WorldObjects/Terrain/Water";
 import { Suspense } from "react";
 import Navbar from "../components/Overlay/Navbar";
