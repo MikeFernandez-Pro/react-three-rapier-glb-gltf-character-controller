@@ -1,5 +1,5 @@
 {
-  "name": "r3f-rapier-character-controller",
+  "name": "react-three-rapier-glb-gltf-character-controller",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,28 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^9.23.3",
-    "@react-three/fiber": "^8.6.0",
-    "@react-three/rapier": "^0.14.0",
+    "@react-three/drei": "^9.65.4",
+    "@react-three/fiber": "^8.12.2",
+    "@react-three/rapier": "^0.15.0",
     "leva": "^0.9.34",
-    "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "styled-components": "^5.3.6",
-    "three": "^0.143.0"
- 
+    "next": "^13.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.9",
+    "three": "^0.151.3"
   },
   "devDependencies": {
-    "@types/node": "18.7.9",
-    "@types/react": "18.0.17",
-    "@types/react-dom": "18.0.6",
+    "@types/node": "^18.15.13",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
     "@types/styled-components": "^5.1.26",
-    "@types/three": "^0.143.1",
-    "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5",
-    "eslint-config-prettier": "^8.5.0",
+    "@types/three": "^0.150.2",
+    "eslint": "^8.38.0",
+    "eslint-config-next": "^13.3.0",
+    "eslint-config-prettier": "^8.8.0",
     "r3f-perf": "^7.1.2",
     "three-noise": "^1.1.2",
-    "typescript": "4.7.4"
+    "typescript": "^5.0.4"
   }
 }

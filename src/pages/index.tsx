@@ -15,7 +15,7 @@ import Water from "../components/Models/WorldObjects/Terrain/Water";
 import { Suspense } from "react";
 import Navbar from "../components/Overlay/Navbar";
 import { Perf } from "r3f-perf";
-import { Physics, RigidBody, Debug, CuboidCollider } from "@react-three/rapier";
+import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 
 const Home: NextPage = () => {
   return (
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 
             {/* Scenery */}
             <Physics>
-              <Debug />
+
 
               <RigidBody>
                 <Apple position={[-6, 4.2, 2]} />
