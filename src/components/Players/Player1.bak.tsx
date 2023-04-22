@@ -8,7 +8,7 @@ import {
   useGLTF,
   useKeyboardControls,
 } from "@react-three/drei";
-import { useInput } from "../../hooks/useInput";
+import { useInput } from "../../../../react-three-rapier-third-person-controller/src/hooks/useInput";
 import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { CapsuleCollider, Physics, RigidBody, useRapier } from "@react-three/rapier";

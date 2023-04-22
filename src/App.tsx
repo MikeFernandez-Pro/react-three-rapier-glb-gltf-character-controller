@@ -1,34 +1,24 @@
 /* eslint-disable react/no-unknown-property */
-import { Canvas } from "@react-three/fiber";
-import type { NextPage } from "next";
-import Head from "next/head";
-import Ground from "../components/Models/WorldObjects/Terrain/Ground";
-import Lights from "../components/Lights";
-import Player1 from "../components/Players/Player1";
-import styles from "../styles/Home.module.css";
-
-import { Apple } from "../components/Models/Flora&Fauna/Trees/SmallAppleloader";
-import { Pine } from "../components/Models/Flora&Fauna/Trees/Pineloader";
-import { Rocks1 } from "../components/Models/WorldObjects/Rocks/Rocks";
-
-import Water from "../components/Models/WorldObjects/Terrain/Water";
 import { Suspense } from "react";
-import Navbar from "../components/Overlay/Navbar";
+import { Canvas } from "@react-three/fiber";
 import { Perf } from "r3f-perf";
 import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 
-const Home: NextPage = () => {
-  return (
-    <div>
-      <Head>
-        <title>r3-rapier character controller</title>
-        <meta name="description" content="r3-rapier character controller" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Navbar />
+import Ground from "./components/Models/WorldObjects/Terrain/Ground";
+import Lights from "./components/Lights";
+import Player1 from "./components/Players/Player1";
 
-      <Suspense fallback={null}>
-        <div className={styles.container}>
+import { Apple } from "./components/Models/Flora&Fauna/Trees/SmallAppleloader";
+import { Pine } from "./components/Models/Flora&Fauna/Trees/Pineloader";
+import { Rocks1 } from "./components/Models/WorldObjects/Rocks/Rocks";
+
+import Water from "./components/Models/WorldObjects/Terrain/Water";
+import Navbar from "./components/Overlay/Navbar";
+
+
+
+const App = () => {
+  return (
           <Canvas
             shadows
             legacy={false}
@@ -111,10 +101,7 @@ const Home: NextPage = () => {
               <Player1 />
             </Physics>
           </Canvas>
-        </div>
-      </Suspense>
-    </div>
   );
 };
 
-export default Home;
+export default App;
